@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "preLaunchTask": "download",
+            "cwd": "${workspaceRoot}",
+            "executable": "build/Main",
+            "name": "OpenOCD",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "jlink_swd.cfg",
+                "stm32f4x.cfg"
+            ],
+            "searchDir": [],
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "gdbPath": "D:/MSYS2/mingw32/bin/arm-none-eabi-gdb.exe"
+        }
+    ]
+}
